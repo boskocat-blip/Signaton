@@ -18,5 +18,3 @@ Skapa reproducerbar arbetsmiljö för Python och R, lära sig Git-flödet och pl
 - [ ] Första commit pushad till GitHub
 - [ ] Kort reflektion dokumenterad
 
-## Veckorutin (förslag)
-Måndag: planera mål; tisdag–torsdag: experiment och dokumentation; fredag: validera, commit, rapportera hinder och nästa steg.

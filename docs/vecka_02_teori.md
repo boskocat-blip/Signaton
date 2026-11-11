@@ -10,8 +10,3 @@
 
 **Data capture:** kontrollera samplingsfrekvens, antal kanaler, bitdjup, längd, amplitud och eventuella klippningar. Syntetiska WAV-filer används här i stället för inspelat tal.
 
-## Frågor att besvara
-- Vad skiljer samplingsfrekvens från bitdjup?
-- Hur ser skillnaden mellan 2 och 16 bitar ut?
-- Varför kan inte ett digitalt filter i efterhand entydigt återställa redan aliaserad information?
-- Vilka metadata bör dokumenteras vid inspelning?
