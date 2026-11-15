@@ -5,7 +5,16 @@
 **LIA-företag:** Signaton  
 **Handledare:** Sead Smailagic  
 **Vecka:** [Veckonummer]  
-**Period:** [Datum – Datum]
+**Period:** [Datum – Datum]  
+**Status:** Klar / Pågående / Stoppat
+
+---
+
+## Sammanfattning på tre rader
+
+1. [Vad gjordes]
+2. [Vad blev resultatet]
+3. [Vad som blockerar / kräver beslut]
 
 ---
 
@@ -41,6 +50,8 @@ Git och GitHub
 Beskriv de viktigaste resultaten.
 
 Vilka experiment fungerade? Vilka slutsatser kan dras av resultaten?
+
+Klistra in/bifoga de viktigaste figurerna (plots):
 
 ## 5. Utmaningar och problemlösning
 
