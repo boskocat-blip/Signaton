@@ -47,9 +47,9 @@ The main objectives are to:
 - SciPy
 - Pandas
 - Matplotlib
-- Librosa
 - SoundFile
 - tuneR
+- Librosa (planned from Week 5)
 
 **Development Tools**
 - Visual Studio Code
@@ -62,11 +62,12 @@ Additional tools and frameworks will be introduced as the project progresses.
 
 ```text
 Signaton/
-├── data/              # Audio data and example signals
+├── data/              # Generated audio files (not committed)
 ├── docs/              # Theory and project documentation
 ├── notebooks/         # Python experiments
 ├── R/                 # R scripts
 ├── scripts/           # Supporting scripts
+├── figures/           # Generated figures (not committed)
 ├── reports/           # Weekly progress reports
 ├── requirements.txt   # Python dependencies
 ├── .gitignore         # Git exclusions
@@ -82,18 +83,19 @@ Signaton/
 - Set up R in Visual Studio Code.
 - Created and executed a Jupyter Notebook.
 - Tested signal visualization in R.
-- Initialized Git and configured the GitHub remote.
+- Configured Git and the GitHub remote.
+
+Files: `notebooks/vecka_01_setup.ipynb`, `R/vecka_01_setup.R`, `docs/vecka_01_setup.md`, `reports/vecka_01_rapport.md`
 
 ### Week 2 – Sampling, Quantization, Aliasing and Data Capture
 
-- Generated and visualized synthetic audio signals.
-- Investigated different sampling frequencies.
-- Demonstrated aliasing using a 440 Hz sine wave.
-- Implemented 4-bit, 8-bit and 16-bit quantization.
-- Calculated Mean Squared Error (MSE).
-- Generated and saved a 16-bit PCM WAV file in Python.
-- Loaded and analyzed the WAV file in both Python and R.
-- Documented experiments and observations.
+- Sampled a 440 Hz sine wave at 16 000, 2 000 and 600 Hz.
+- Demonstrated aliasing (440 Hz → 160 Hz at fs = 600 Hz, 1 200 Hz → 800 Hz at fs = 2 000 Hz) and verified it with FFT.
+- Implemented 2-, 4-, 8- and 16-bit quantization and calculated MSE and SQNR (≈ 6 dB per bit).
+- Generated a 16-bit PCM WAV file in Python and verified its format in both Python and R.
+- Notebook, R script and theory notes use the same parameters and examples.
+
+Files: `notebooks/vecka_02_sampling_kvantisering_aliasing.ipynb`, `R/vecka_02_sampling.R`, `docs/vecka_02_teori.md`, `reports/vecka_02_rapport.md`
 
 ### Upcoming Work
 
@@ -137,7 +139,7 @@ Install the required R package:
 install.packages("tuneR")
 ```
 
-Run the Week 2 script from the project root:
+Run the Week 2 notebook first (it creates `data/test_signal_440hz.wav`), then run the Week 2 script from the project root:
 
 ```r
 source("R/vecka_02_sampling.R")
@@ -149,13 +151,13 @@ The repository includes weekly reports, theoretical notes, experiments and refle
 
 Weekly reports are stored in the `reports/` directory.
 
-The report template is available in `docs/fredagsrapport_mall.md`.
+The report template is available in `docs/fredagsrapport_mall.md` and the Git workflow in `docs/git_workflow.md`.
 
 ## Project Status
 
 **Current stage:** Phase 1 – DSP Fundamentals & Data Pipeline
 
-**Completed locally:** Weeks 1–2
+**Completed:** Weeks 1–2
 
 **Next milestone:** Week 3 – FFT, Window Functions and PSD
 
