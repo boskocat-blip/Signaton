@@ -102,7 +102,7 @@ Vecka 4 (branch `vecka-04-filter`): filterdesign med FIR och IIR, frekvensgång 
 
 ## 8. Länkar och dokumentation
 
-**GitHub:** [Repo](https://github.com/boskocat-blip/Signaton) · PR: [klistra in länk till PR för vecka 3]
+**GitHub:** [Repo](https://github.com/boskocat-blip/Signaton) · PR: [#2 Vecka 3](https://github.com/boskocat-blip/Signaton/pull/2)
 
 **Notebooks:** [`notebooks/vecka_03_fft_fonster_psd.ipynb`](../notebooks/vecka_03_fft_fonster_psd.ipynb) · [`R/vecka_03_fft_psd.R`](../R/vecka_03_fft_psd.R)
 
