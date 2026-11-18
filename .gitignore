@@ -1,28 +1,27 @@
-# Python virtual environment
+# Python-miljö
 .venv/
 venv/
-
-# Python cache
 __pycache__/
 *.pyc
 
 # Jupyter
 .ipynb_checkpoints/
 
-# R temporary files
+# Genererade filer (skapas när notebooks körs) - se docs/git_workflow.md
+data/**/*.wav
+figures/
+
+# Rådata, utdata och hemligheter
+data/raw/
+outputs/
+.env
+
+# R
 .Rhistory
 .RData
 .Rproj.user/
 
-# VS Code local settings
-.vscode/
-
-# Operating system
+# System och editor
 .DS_Store
 Thumbs.db
-
-# Temporary audio and output files
-data/raw/
-outputs/
-
-.env
+.vscode/
