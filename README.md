@@ -49,6 +49,7 @@ The main objectives are to:
 - Matplotlib
 - SoundFile
 - tuneR
+- ggplot2
 - Librosa (planned from Week 5)
 
 **Development Tools**
@@ -97,9 +98,17 @@ Files: `notebooks/vecka_01_setup.ipynb`, `R/vecka_01_setup.R`, `docs/vecka_01_se
 
 Files: `notebooks/vecka_02_sampling_kvantisering_aliasing.ipynb`, `R/vecka_02_sampling.R`, `docs/vecka_02_teori.md`, `reports/vecka_02_rapport.md`
 
-### Upcoming Work
+### Week 3 – FFT, Window Functions and PSD
 
-**Week 3:** Fast Fourier Transform (FFT), window functions and Power Spectral Density (PSD).
+- Computed amplitude spectra with FFT and showed how frequency resolution depends on the analysis length (Δf = fs/N).
+- Demonstrated spectral leakage (437.5 Hz on-bin vs. 440 Hz between bins at N = 1 024).
+- Compared rectangular, Hann, Hamming and Blackman windows (sidelobes −13/−31/−43/−58 dB, ENBW, main lobe width) and showed that a −40 dB tone is hidden by leakage without a window.
+- Estimated PSD with periodogram and Welch; verified Parseval, the noise floor (1.25·10⁻⁶) and SNR (≈ 15 dB).
+- Same experiments in R (base `fft`, own Welch implementation, `ggplot2`).
+
+Files: `notebooks/vecka_03_fft_fonster_psd.ipynb`, `R/vecka_03_fft_psd.R`, `docs/vecka_03_teori.md`, `reports/vecka_03_rapport.md`
+
+### Upcoming Work
 
 **Week 4:** Digital filter design (FIR/IIR).
 
@@ -133,16 +142,17 @@ Open the Jupyter notebooks in Visual Studio Code and select the `.venv` Python k
 
 ### R
 
-Install the required R package:
+Install the packages used by the R scripts:
 
 ```r
-install.packages("tuneR")
+install.packages(c("tuneR", "ggplot2"))
 ```
 
-Run the Week 2 notebook first (it creates `data/test_signal_440hz.wav`), then run the Week 2 script from the project root:
+Run the notebook for a week first (it creates `data/test_signal_440hz.wav`), then run the R script from the project root:
 
 ```r
 source("R/vecka_02_sampling.R")
+source("R/vecka_03_fft_psd.R")
 ```
 
 ## Documentation
@@ -157,9 +167,9 @@ The report template is available in `docs/fredagsrapport_mall.md` and the Git wo
 
 **Current stage:** Phase 1 – DSP Fundamentals & Data Pipeline
 
-**Completed:** Weeks 1–2
+**Completed:** Weeks 1–3
 
-**Next milestone:** Week 3 – FFT, Window Functions and PSD
+**Next milestone:** Week 4 – Digital Filter Design (FIR/IIR)
 
 ---
 
