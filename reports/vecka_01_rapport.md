@@ -70,7 +70,7 @@ Inga frågor till handledaren just nu.
 
 ## 8. Länkar och dokumentation
 
-**GitHub:** [Repo](https://github.com/boskocat-blip/Signaton) · PR: [klistra in länk till PR för vecka 1–2]
+**GitHub:** [Repo](https://github.com/boskocat-blip/Signaton) · PR: [#1 Vecka 1–2](https://github.com/boskocat-blip/Signaton/pull/1)
 
 **Notebooks:** [`notebooks/vecka_01_setup.ipynb`](../notebooks/vecka_01_setup.ipynb) · [`R/vecka_01_setup.R`](../R/vecka_01_setup.R)
 

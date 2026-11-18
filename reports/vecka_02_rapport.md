@@ -97,7 +97,7 @@ Vecka 3 (branch `vecka-03-fft`): FFT, fönsterfunktioner (rektangulär, Hamming,
 
 ## 8. Länkar och dokumentation
 
-**GitHub:** [Repo](https://github.com/boskocat-blip/Signaton) · PR: [klistra in länk till PR för vecka 1–2]
+**GitHub:** [Repo](https://github.com/boskocat-blip/Signaton) · PR: [#1 Vecka 1–2](https://github.com/boskocat-blip/Signaton/pull/1)
 
 **Notebooks:** [`notebooks/vecka_02_sampling_kvantisering_aliasing.ipynb`](../notebooks/vecka_02_sampling_kvantisering_aliasing.ipynb) · [`R/vecka_02_sampling.R`](../R/vecka_02_sampling.R)
 
