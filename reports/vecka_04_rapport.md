@@ -90,7 +90,7 @@ Vecka 5 (branch `vecka-05-stft`): STFT, spektrogram, mel-spektrogram och cepstru
 
 ## 8. Länkar och dokumentation
 
-**GitHub:** [Repo](https://github.com/boskocat-blip/Signaton) · PR: [klistra in länk till PR för vecka 4]
+**GitHub:** [Repo](https://github.com/boskocat-blip/Signaton) · PR: [#3 Vecka 4](https://github.com/boskocat-blip/Signaton/pull/3)
 
 **Notebooks:** [`notebooks/vecka_04_filterdesign.ipynb`](../notebooks/vecka_04_filterdesign.ipynb) · [`R/vecka_04_filter.R`](../R/vecka_04_filter.R)
 
