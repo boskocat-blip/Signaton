@@ -50,6 +50,7 @@ The main objectives are to:
 - SoundFile
 - tuneR
 - ggplot2
+- signal (R)
 - Librosa (planned from Week 5)
 
 **Development Tools**
@@ -108,9 +109,17 @@ Files: `notebooks/vecka_02_sampling_kvantisering_aliasing.ipynb`, `R/vecka_02_sa
 
 Files: `notebooks/vecka_03_fft_fonster_psd.ipynb`, `R/vecka_03_fft_psd.R`, `docs/vecka_03_teori.md`, `reports/vecka_03_rapport.md`
 
-### Upcoming Work
+### Week 4 – Digital Filter Design (FIR/IIR)
 
-**Week 4:** Digital filter design (FIR/IIR).
+- Derived the frequency response of a moving-average filter and verified it against the formula.
+- Designed a 101-tap FIR lowpass (window method, Hamming) with linear phase and a constant 50-sample delay.
+- Designed a 4th-order Butterworth IIR lowpass, checked stability (poles inside the unit circle) and compared orders 2, 4 and 8.
+- Compared FIR and IIR (attenuation, delay, phase, cost) and applied a zero-phase 300–3400 Hz bandpass to a noisy test signal (SNR 2.7 → 21 dB).
+- Same experiments in R with the `signal` package.
+
+Files: `notebooks/vecka_04_filterdesign.ipynb`, `R/vecka_04_filter.R`, `docs/vecka_04_teori.md`, `reports/vecka_04_rapport.md`
+
+### Upcoming Work
 
 **Week 5:** STFT, mel-spectrograms and cepstral analysis.
 
@@ -145,7 +154,7 @@ Open the Jupyter notebooks in Visual Studio Code and select the `.venv` Python k
 Install the packages used by the R scripts:
 
 ```r
-install.packages(c("tuneR", "ggplot2"))
+install.packages(c("tuneR", "ggplot2", "signal"))
 ```
 
 Run the notebook for a week first (it creates `data/test_signal_440hz.wav`), then run the R script from the project root:
@@ -153,6 +162,7 @@ Run the notebook for a week first (it creates `data/test_signal_440hz.wav`), the
 ```r
 source("R/vecka_02_sampling.R")
 source("R/vecka_03_fft_psd.R")
+source("R/vecka_04_filter.R")
 ```
 
 ## Documentation
@@ -167,9 +177,9 @@ The report template is available in `docs/fredagsrapport_mall.md` and the Git wo
 
 **Current stage:** Phase 1 – DSP Fundamentals & Data Pipeline
 
-**Completed:** Weeks 1–3
+**Completed:** Weeks 1–4
 
-**Next milestone:** Week 4 – Digital Filter Design (FIR/IIR)
+**Next milestone:** Week 5 – STFT, Mel-Spectrograms and Cepstral Analysis
 
 ---
 
